@@ -1,0 +1,80 @@
+seed:
+  desc: random seed
+  value: 1
+backbone:
+  desc: The backbone network of the encoder, dinov2reg_vit_base_14, uni, uni2, gigapath, conch
+  value: "conch"
+dataset:
+  desc: The dataset can be Camelyon16, Camelyon16Patch, Camelyon16BMAD, LNM_Prostate, LNM_ProstatePatch
+  value: "Camelyon16BMAD"
+
+total_iters:
+  desc: Number of total iters to train over, ProstatePatch 8970 BMAD 159, Camelyon16 4656
+  value: 15900
+eval_period:
+  desc: iterations to conduct evaluation
+  value: 159
+save_best:
+  desc: Save the best model
+  value: True
+batch_size:
+  desc: Batch size
+  value: 32
+learning_rate:
+  desc: learning rate, default is 0.002
+  value: 0.002
+
+stop_grad:
+  desc: whether to apply stop gradient to the encoder
+  value: True
+bottleneck_dropout:
+  desc: dropout applied to bottleneck, default value is 0.0
+  value: 0.0
+remove_class_token:
+  desc: whether to remove class token, set is True when using Conv decoder
+  value: False
+image_size:
+  desc: image size 
+  value: 224
+attn_method:
+  desc: linear_attn or qkv_attn
+  value: "qkv_attn"
+bottleneck_fusion:
+  desc: whether to fuse the itermediate layer features as the input the bottleneck
+  value: True
+fuse_layers:
+  desc: fuse layers for both the encoder and decoder, should be a list of list, default [[0, 1], [2, 3]]
+  value: [[0], [1], [2], [3]]
+target_layers:
+  desc: layers to extract features, for conch model, there are 12 blocks in total, default [8, 9, 10, 11]
+  value: [8, 9, 10, 11] 
+
+num_heads:
+  desc: num of heads for the attention
+  value: 1
+
+save_path:
+  desc: base path of weights
+  value: ""
+data_root:
+  desc: data root dir
+  value: ""
+
+loss_func:
+  desc: name the loss function, hm_percent, cosine_focal, rd_loss
+  value: "hm_percent"
+
+gpu_id:
+  desc: gpu id
+  value: "0"
+
+mask_neighbor_size:
+  desc: mask_neighbor_size
+  value: 20
+feature_jitter:
+  desc: whether to use feature_jitter
+  value: False
+
+enable_ecr:
+  desc: whether to apply ecr
+  value: True

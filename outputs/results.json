@@ -1,0 +1,32 @@
+{
+  "dataset": "Camelyon16-BMAD",
+  "backbone": "conch",
+  "checkpoint": "/content/drive/MyDrive/wsi_anomaly_detection/weights/Camelyon16BMAD_conch_best_model_patch_train.pth",
+  "checkpoint_kind": "best (plain state_dict)",
+  "config_file": "/content/wsi_anomaly_detection/configs/conch/conch_bmad_config_ecr4ad.yaml",
+  "calibration_split": "valid",
+  "calibration_normal_only": true,
+  "threshold_t95": 0.04781355336308479,
+  "metrics": {
+    "auroc": 0.9452628031398762,
+    "ap": 0.9368305270100334,
+    "f1_max": 0.8763936015511391,
+    "tpr_at_t95": 0.8108651911468813,
+    "fpr_at_t95": 0.07776669990029911
+  },
+  "confusion_t95": {
+    "tn": 925,
+    "fp": 78,
+    "fn": 188,
+    "tp": 806
+  },
+  "counts": {
+    "test": 1997,
+    "normal": 1003,
+    "tumor": 994,
+    "calibration_total": 236,
+    "calibration_normal": 117
+  },
+  "paper_target_auroc": 0.9462,
+  "delta_auroc_pp": -0.09371968601238345
+}

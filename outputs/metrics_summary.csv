@@ -1,0 +1,2 @@
+dataset,backbone,checkpoint,calib_split,threshold_t95,auroc,ap,f1_max,tpr_at_t95,fpr_at_t95,tn,fp,fn,tp,n_test,paper_auroc,delta_pp
+Camelyon16-BMAD,conch,/content/drive/MyDrive/wsi_anomaly_detection/weights/Camelyon16BMAD_conch_best_model_patch_train.pth,valid-normal,0.047814,0.945263,0.936831,0.876394,0.810865,0.077767,925,78,188,806,1997,0.9462,-0.09
