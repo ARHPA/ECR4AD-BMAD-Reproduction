@@ -92,6 +92,3 @@ If you use this codebase, please cite the original ECR4AD publication:
 }
 ```
 
-### Acknowledgements
-This project builds upon the foundational code and methodologies established by [Dinomaly](https://github.com/guojiajeremy/Dinomaly), [CONCH](https://github.com/mahmoodlab/CONCH), and [ECR4AD](https://ieeexplore.ieee.org/abstract/document/11494142). We thank the authors for their open contributions.
-
