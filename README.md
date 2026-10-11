@@ -13,7 +13,6 @@ Direct comparison between the reported figures in the paper and this reproductio
 | **AUROC** | 94.62% | **94.53%** |
 | **AP** (Average Precision) | 93.72% | **93.41%** |
 | **F1-max** | 87.72% | **87.68%** |
-| **TPR** (@ T95) | 73.66% | **81.09%** |
 
 ---
 
